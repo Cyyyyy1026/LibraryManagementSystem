@@ -15,12 +15,12 @@ public class Add implements AddOperation{
         System.out.println("请输入您要新增图书的作者：");
         String author = scanner.nextLine();
         System.out.println("请输入您要新增的书籍编号：");
-        int  number = scanner.nextInt();
+        int  id = scanner.nextInt();
         System.out.println("请输入您要新增书籍数量：");
         int qty = scanner.nextInt();
 
         Book existingBook = bookList.findBook(name);
-        Book book = new Book(number,name,author,qty);
+        Book book = new Book(id,name,author,qty);
 
         if (existingBook != null) {
             // 如果书籍已存在，增加现有数量

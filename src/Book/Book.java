@@ -1,24 +1,24 @@
 package Book;
 
 public class Book{
-    private  int number;//书籍编号
+    private  int id;//书籍编号
     private  String name;//书名
     private  String author;//作者
     private  int qty;//数量
 
-    public Book(int number, String name, String author, int qty) {
-        this.number = number;
+    public Book(int id, String name, String author, int qty) {
+        this.id = id;
         this.name = name;
         this.author = author;
         this.qty = qty;
     }
 
-    public int getNumber() {
-        return number;
+    public int getId() {
+        return id;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -47,7 +47,7 @@ public class Book{
 
     @Override
     public String toString() {
-        return  "书籍号：" + number +
+        return  "书籍号：" + id +
                 ",书名：" + name +
                 ",作者：" + author +
                 ",库存：" + qty;
