@@ -30,4 +30,4 @@ public class Manager extends User{
         int choice = scanner.nextInt();
         return choice;
     }
-}//
+}
