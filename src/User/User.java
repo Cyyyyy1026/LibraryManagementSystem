@@ -35,14 +35,14 @@ abstract public class User {
                     this.findOperations[0].work(bookList);
                 }
                 break;
-            case 4:
+            case 3:
                 if (this.borrowOperations != null) {
                     this.borrowOperations[0].work(bookList);
                 } else {
                     this.findOperations[0].work(bookList);
                 }
                 break;
-            case 5:
+            case 4:
                 if (this.returnOperations != null) {
                     this.returnOperations[0].work(bookList);
                 } else {

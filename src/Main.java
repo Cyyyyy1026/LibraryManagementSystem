@@ -6,7 +6,6 @@ import User.User;
 import java.util.Scanner;
 
 public class Main {
-
     public static User login() {
         System.out.println("请输入你的姓名：");
         Scanner scanner = new Scanner(System.in);
@@ -19,9 +18,7 @@ public class Main {
             return new Student(name);
         }
     }
-
     public static void main(String[] args) {
-
         BookList bookList = new BookList();
         User user = login();//此时不确定使用者是谁
         while (true) {

@@ -33,5 +33,6 @@ public class Add implements AddOperation{
             bookList.addBook(book);
             System.out.println("图书添加成功！");
         }
+        new BookList();
     }
 }
